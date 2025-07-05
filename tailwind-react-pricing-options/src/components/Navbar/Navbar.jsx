@@ -17,7 +17,7 @@ const Navbar = () => {
     const links = navItems.map(route => <Link key={route.id} route={route}></Link>)
 
     return (
-        <nav className='flex justify-around'>
+        <nav className='flex justify-around mt-5'>
 
             <span className='flex' onClick={() => setOpen(!open)}>
                 {
@@ -26,11 +26,13 @@ const Navbar = () => {
                         <Menu className='md:hidden'></Menu>
                 }
 
-                <ul className='md:hidden'>
+                <ul className={`md:hidden absolute duration-1000
+                     ${open? 'top-14' : '-top-40'}
+                      bg-red-400`}>
                     {links}
                 </ul>
 
-                <h3 className='ml-4'>My Navbar</h3>
+                <h3 className='ml-4'>GYM Real</h3>
             </span>
 
             <ul className='md:flex hidden'>
@@ -49,7 +51,7 @@ const Navbar = () => {
                 <li className='mr-10'><a href="/About">About</a></li>
                 <li className='mr-10'><a href="/Blogs">Blogs</a></li>
             </ul> */}
-            <button className='btn btn-primary'>Sign in</button>
+            <button className='btn btn-info'>Sign in</button>
         </nav>
     );
 };
