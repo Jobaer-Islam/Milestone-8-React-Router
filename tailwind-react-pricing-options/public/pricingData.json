@@ -18,6 +18,7 @@
     "id": 2,
     "name": "Standard",
     "price": "$49/mo",
+    "popular": true,
     "info": "Ideal for consistent gym-goers looking for variety in workouts and flexibility.",
     "features": [
       "Everything in Basic",
