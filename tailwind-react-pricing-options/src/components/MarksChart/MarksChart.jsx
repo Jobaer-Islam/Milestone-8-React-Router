@@ -32,6 +32,7 @@ const MarksChart = ({marksPromise}) => {
                 <YAxis></YAxis>
                 <Bar dataKey= "avg" fill='yellow'></Bar>
                 <Bar dataKey= "chemistry" fill='blue'></Bar>
+                <Tooltip defaultIndex={2} />
             </BarChart>
             
         </div>
