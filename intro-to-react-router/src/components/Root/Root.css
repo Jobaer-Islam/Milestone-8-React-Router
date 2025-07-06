@@ -1,0 +1,8 @@
+.root-main{
+    display: flex;
+    gap: 20px;
+}
+
+a.active {
+  color: rgb(239, 64, 64);
+}

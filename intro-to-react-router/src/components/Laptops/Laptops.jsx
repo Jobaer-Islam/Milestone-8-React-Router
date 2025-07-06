@@ -3,7 +3,7 @@ import React from 'react';
 const Laptops = () => {
     return (
         <div>
-            This is Laptop section.
+            <h2>This is Laptop section.</h2>
         </div>
     );
 };
